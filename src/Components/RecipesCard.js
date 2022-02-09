@@ -1,0 +1,30 @@
+import { Card, ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+function RecipesCard({ recipes }) {
+  //   console.log(recipes);
+
+  const ingredientsList = recipes.ingredients.map((ingredients) => (
+    <ListGroup.Item>{ingredients}</ListGroup.Item>
+  ));
+
+  //   console.log(recipes.ingredients);
+
+  return (
+    <div>
+      <Card style={{ width: "15rem", marginTop: 20 }}>
+        <Link to="/">
+          <Card.Img variant="top" className="cardImage" src={recipes.image} />
+        </Link>
+        <Card.Body>
+          <Card.Title>{recipes.name}</Card.Title>
+          <Card.Text>Owner: {recipes.owner}</Card.Text>
+          <Card.Text>Description: {recipes.description}</Card.Text>
+          <div>Ingredients: {ingredientsList}</div>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+}
+
+export default RecipesCard;

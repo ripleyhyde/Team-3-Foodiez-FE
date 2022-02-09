@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  background-color: rgba(111, 22, 3, 0.817);
+  margin-top: 50px;
+  height: 50px;
+}
+
+.categoriesCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardImage {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.recipesCards {
+  display: flex;
+  flex-wrap: wrap;
+}
