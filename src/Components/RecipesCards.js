@@ -6,7 +6,11 @@ function RecipesCards() {
     <RecipesCard recipes={recipes} />
   ));
 
-  return <div className="recipesCards">{recipesList}</div>;
+  return (
+    <div className="recipesCards" key={"recipesList"}>
+      {recipesList}
+    </div>
+  );
 }
 
 export default RecipesCards;
