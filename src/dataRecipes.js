@@ -5,7 +5,7 @@ const recipes = [
     image:
       "https://media-cdn.tripadvisor.com/media/photo-s/19/3b/00/06/sushi-place.jpg",
     description: "All Blue",
-    ingredients: ["rice", "salmon", "tobiko", "crab"],
+    ingredients: [" rice ", " salmon", " tobiko", " crab "],
     category: "japanese",
   },
 
@@ -15,7 +15,7 @@ const recipes = [
     image:
       "https://www.thedailymeal.com/sites/default/files/story/2017/4535510-untitled_design_0.jpg",
     description: "Wahoo",
-    ingredients: ["cheese", "mushrooms", "olives", "pepperoni"],
+    ingredients: [" cheese ", " mushrooms", " olives", " pepperoni "],
   },
 
   {
@@ -24,7 +24,7 @@ const recipes = [
     image:
       "https://img.buzzfeed.com/buzzfeed-static/static/2021-02/16/19/campaign_images/33fd38395bee/these-photos-of-gourmet-chinese-food-are-glamorou-2-338-1613504395-9_dblbig.jpg?resize=1200:*",
     description: "Fast as lightning",
-    ingredients: ["chicken", "kung", "pao"],
+    ingredients: [" chicken ", " kung", " pao "],
   },
 
   {
@@ -33,7 +33,7 @@ const recipes = [
     image:
       "https://res.cloudinary.com/hsxfx8igq/image/upload/t_4x3_recipe_image,f_auto/v1620038577/carne_asada_tacos_cdsjzb.jpg",
     description: "Ole",
-    ingredients: ["tortilla", "lettuce", "shrimp", "jalapeno"],
+    ingredients: [" tortilla ", " lettuce", " shrimp", " jalapeno "],
   },
 ];
 
