@@ -42,10 +42,16 @@
   margin-top: 50px;
   height: 50px;
 } */
+.navbar {
+  background-color: #9c6137;
+  margin-top: 50px;
+  height: 70px;
+}
 
 .categoriesCards {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
 }
 
 .cardImage {
@@ -58,4 +64,104 @@
 .recipesCards {
   display: flex;
   flex-wrap: wrap;
+}
+
+.cardClass {
+  max-width: 110%;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cardClass2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card-image {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  text-align: center;
+}
+
+Button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(82, 40, 0) 0%,
+    rgb(163, 100, 0) 8%,
+    rgb(163, 106, 0) 92%,
+    rgb(82, 53, 0) 100%
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgba(240, 116, 0, 0.582);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+Button:hover {
+  filter: brightness(110%);
+}
+
+Button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+Button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+Button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+Button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+Button:focus:not(:focus-visible) {
+  outline: none;
 }

@@ -10,6 +10,8 @@ import {
 } from "react-bootstrap";
 import CreateCat from "./CreateCat";
 import api from "../stores/api";
+import { Button } from "antd";
+import { Nav } from "react-bootstrap";
 
 function NavBar() {
   const handleChange = (e) => {
@@ -57,6 +59,41 @@ function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Nav fill variant="tabs" defaultActiveKey="/home" className="navbar">
+        <Nav.Item>
+          <Nav.Link href="/home" style={{ color: "#DAA520", fontSize: "20px" }}>
+            <strong>Home</strong>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            eventKey="/recipes"
+            style={{ color: "#DAA520", fontSize: "20px" }}
+          >
+            <strong>Recipes</strong>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            eventKey="/ingredients"
+            style={{ color: "#DAA520", fontSize: "20px" }}
+          >
+            <strong>Ingredients</strong>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="btn">
+          <Button>
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Login</span>
+          </Button>
+          <Button>
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Logout</span>
+          </Button>
+        </Nav.Item>
+      </Nav>
     </div>
   );
 }

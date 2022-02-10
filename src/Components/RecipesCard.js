@@ -12,9 +12,14 @@ function RecipesCard({ recipes }) {
 
   return (
     <div>
-      <Card style={{ width: "15rem", marginTop: 20 }}>
+      <Card className="cardClass my-4 p-3 rounded h-60 text-center">
         <Link to="/">
-          <Card.Img variant="top" className="cardImage" src={recipes.image} />
+          <Card.Img
+            className="card-image"
+            style={{ objectFit: "contain" }}
+            variant="top"
+            src={recipes.image}
+          />
         </Link>
         <Card.Body>
           <Card.Title>{recipes.name}</Card.Title>

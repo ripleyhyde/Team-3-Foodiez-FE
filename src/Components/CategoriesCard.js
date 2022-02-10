@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function CategoriesCard({ categories }) {
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
+      <Card className="cardClass2 my-4 p-3 rounded h-60 text-center">
         <Link to={"/recipes"}>
           <Card.Img
             className="cardImage"
